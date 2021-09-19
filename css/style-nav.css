@@ -1,0 +1,385 @@
+@charset "UTF-8";
+
+@font-face{
+	src:url("../font/Sansita-Black.ttf");
+	}
+@font-face{
+	src:url("../font/SansitaSwashed-VariableFont_wght.ttf");
+	}
+.menu{
+	position: fixed;
+	display: flex;
+	z-index: 99999;
+	justify-content: center;
+}
+.container-nav {
+	font-family: "sansita-one";
+	width: 300px;
+	height: 300px;
+	position: relative;
+	top:160px;
+	left: 180px;
+    transform: translate(-50%, -50%);
+}
+header {
+	text-align: center;
+	height: 60px;
+	margin-bottom: 10px;
+	background-color: #2C3B5B;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.75);
+}
+
+header:before {
+	content:"≡ Portfolio";
+	font-size: 2rem;
+	color: rgba(197,189,190,1.00);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 280px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header:hover{
+	background-color: #0D182F ;
+}
+.trigger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+.trigger:checked + nav {
+  transition-delay: 0s;
+  height: calc(100% - 60px);
+}
+.trigger:checked + nav:before {
+  width: 100%;
+}
+.trigger:checked + nav .block:nth-child(1) {
+  -webkit-animation-name: horizontal;
+          animation-name: horizontal;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.trigger:checked + nav .block:nth-child(2) {
+  -webkit-animation-name: vertical;
+          animation-name: vertical;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.trigger:checked + nav .block:nth-child(3) {
+  -webkit-animation-name: vertical;
+          animation-name: vertical;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.trigger:checked + nav .block:nth-child(4) {
+  -webkit-animation-name: horizontal;
+          animation-name: horizontal;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.trigger:checked + nav .block:nth-child(5) {
+  -webkit-animation-name: horizontal;
+          animation-name: horizontal;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.trigger:checked + nav .block:nth-child(6) {
+  -webkit-animation-name: vertical;
+          animation-name: vertical;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+nav {
+  width: 100%;
+  height: 10px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  border-top: 10px solid #32446A;
+  box-sizing: border-box;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  transition: height 0s ease 1.4s;
+}
+
+nav:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 0;
+  height: 10px;
+  background-color: #f9f9f9;
+  transition: width 1.4s cubic-bezier(0.9, 0.05, 0.7, 0.2);
+  -webkit-animation: nav-intro 1.4s cubic-bezier(0.9, 0.05, 0.7, 0.2);
+          animation: nav-intro 1.4s cubic-bezier(0.9, 0.05, 0.7, 0.2);
+}
+
+.block {
+  width: 50%;
+  height: 33.33%;
+  float: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.75);
+  outline: 1px solid rgba(0, 0, 0, 0.45);
+  display: block;
+  text-decoration: none;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-timing-function: cubic-bezier(0.9, 0.05, 0.7, 0.2);
+          animation-timing-function: cubic-bezier(0.9, 0.05, 0.7, 0.2);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.block:before {
+  height: 100%;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block:nth-child(1):before {
+  content: "Home";
+}
+.block:nth-child(1):hover {
+  	background: rgba(115,114,114,1.00);
+	color: white;
+}
+.block:nth-child(2):before {
+  content: "About";
+}
+.block:nth-child(2):hover {
+  	background: rgba(135,143,176,1.00);
+	color: black;
+}
+.block:nth-child(3):before {
+  content: "Lớp học";
+}
+.block:nth-child(3):hover {
+  	background: rgba(135,143,176,1.00);
+	color: black;
+}
+.block:nth-child(4):before {
+  content: "Ngoại khóa";
+}
+.block:nth-child(4):hover {
+  	background: rgba(115,114,114,1.00);
+	color: white;
+}
+
+.block:nth-child(5):before {
+  content: "Trung tâm";
+}
+.block:nth-child(5):hover {
+  	background: rgba(115,114,114,1.00);
+	color: white;
+}
+.block:nth-child(6):before {
+  content: "Liên hệ";
+}
+.block:nth-child(6):hover {
+  	background: rgba(135,143,176,1.00);
+	color: black;
+}
+.block:nth-child(1) {
+  background-color: #f9f9f9;
+  color: #32446A;
+  transform: rotateX(-90deg);
+  transform-origin: top center;
+  -webkit-animation-name: horizontal-reverse;
+          animation-name: horizontal-reverse;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.block:nth-child(2) {
+  background-color: #32446A;
+  color: #f9f9f9;
+  transform: rotateY(90deg);
+  transform-origin: left center;
+  -webkit-animation-name: vertical-reverse;
+          animation-name: vertical-reverse;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.block:nth-child(3) {
+  background-color: #32446A;
+  color: #f9f9f9;
+  transform: rotateY(-90deg);
+  transform-origin: right center;
+  -webkit-animation-name: vertical-reverse;
+          animation-name: vertical-reverse;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.block:nth-child(4) {
+  background-color: #f9f9f9;
+  color: #32446A;
+  transform: rotateX(-90deg);
+  transform-origin: top center;
+  -webkit-animation-name: horizontal-reverse;
+          animation-name: horizontal-reverse;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.block:nth-child(5) {
+  background-color: #f9f9f9;
+  color: #32446A;
+  transform: rotateX(-90deg);
+  transform-origin: top center;
+  -webkit-animation-name: horizontal-reverse;
+          animation-name: horizontal-reverse;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.block:nth-child(6) {
+  background-color: #32446A;
+  color: #f9f9f9;
+  transform: rotateY(90deg);
+  transform-origin: left center;
+  -webkit-animation-name: vertical-reverse;
+          animation-name: vertical-reverse;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+
+@-webkit-keyframes horizontal {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes horizontal {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes horizontal-reverse {
+  0% {
+    transform: rotateX(0deg);
+    visibility: visible;
+  }
+  99% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes horizontal-reverse {
+  0% {
+    transform: rotateX(0deg);
+    visibility: visible;
+  }
+  99% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes vertical {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes vertical {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes vertical-reverse {
+  0% {
+    transform: rotateY(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes vertical-reverse {
+  0% {
+    transform: rotateY(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes nav-intro {
+  0% {
+    width: 0%;
+  }
+}
+@keyframes nav-intro {
+  0% {
+    width: 0%;
+  }
+}

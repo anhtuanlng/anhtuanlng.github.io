@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aikido Aishinkan Vietnam	</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/style-nav.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+</head>
+<body >
+	<div class="container-fluid" style="height:100%">	
+	  <div class="container">
+		<div class="row" >
+			<!------------header------------------->
+			<div class="col-md-4" style="height:5rem" >
+			   <div class="menu">
+					<div class="container-nav ">
+					  <header>
+					  	<input class="trigger" type="checkbox" checked="checked"/>
+					  <nav>
+						  <a class="block" href="index.html"></a>
+						  <a class="block" href="about.html"></a>
+						  <a class="block" href="lophoc.html"></a>
+						  <a class="block" href="ngoaikhoa.html"></a>
+						  <a class="block" href="trungtam.html"></a>
+						  <a class="block" href="lienhe.html"></a>
+					  </nav>
+					 </header>
+					</div>
+				</div>
+			  </div>
+			<!------------------------------->
+			<div class="col-md-4 my-3 text-center" style="height:10rem" >
+				<div class="text-header">
+					<p>
+					  lIÊN ĐOÀN AIKIDO 
+					  <span>
+						AIKIDO AISHINKAN VIETNAM 
+					  </span>
+					  &mdash; THÀNH PHỐ HỒ CHÍ MINH &mdash;
+					</p>
+				</div>
+				
+			</div>
+			
+			<!------------------------------->
+		  	<div class="col-md-4 my-3 text-center style="height:10rem"  >
+		    	<img src="img/logo.png" width="40%" alt=""/>
+			</div>
+			<!------------------------------->
+		</div>
+		<!--------end header------------------>	 
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-9 text-center" >
+				   <img class="wow bounceInRight"  data-wow-duration="2000ms" src="img/aiki01.png" width="75%"  alt=""/ style="margin-top:-40px" >
+			</div>
+			<div class="col-md-12 text-center home" >
+				<h1 class="wow bounceInDown"  data-wow-duration="2000ms">"Chiến thắng chính bản thân mình là chiến thắng tất cả"</h1>
+			</div>
+			<div class="col-md-12" style="height: 10vh"></div>
+		</div>
+		<!--------footer------------------>
+			<div class="marque fs-5" style="font-style: italic">
+				<marquee>
+					Copyright by Aikido Aishinkan Vietnam 
+				</marquee>
+			</div>
+			<!--		end container-->
+	  </div>
+	</div>
+	<!--------------------------------------------------------------------------------------------------------------------->
+<!--WoW-->
+ <script src="js/wow.js"></script>
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+<!--end WoW-->	
+<!--------------------------------------------------------------------------------------------------------------------->	
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

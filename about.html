@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aikido Aishinkan Vietnam	</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/style-nav.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+</head>
+<body >
+	<div class="container-fluid" style="height:100%">	
+	  <div class="container" >
+		<div class="row" >
+			<!------------header------------------->
+			<div class="col-md-4" style="height:5rem" >
+			   <div class="menu">
+					<div class="container-nav ">
+					  <header>
+					  	<input class="trigger" type="checkbox" checked="checked"/>
+					  <nav>
+						  <a class="block" href="index.html"></a>
+						  <a class="block" href="about.html"></a>
+						  <a class="block" href="lophoc.html"></a>
+						  <a class="block" href="ngoaikhoa.html"></a>
+						  <a class="block" href="trungtam.html"></a>
+						  <a class="block" href="lienhe.html"></a>
+					  </nav>
+					 </header>
+					</div>
+				</div>
+			  </div>
+			<!------------------------------->
+			<div class="col-md-4 my-3 text-center" style="height:10rem" >
+				<div class="text-header">
+					<p>
+					  lIÊN ĐOÀN AIKIDO 
+					  <span>
+						AIKIDO AISHINKAN VIETNAM 
+					  </span>
+					  &mdash; THÀNH PHỐ HỒ CHÍ MINH &mdash;
+					</p>
+				</div>
+			</div>
+					<!------------------------------->
+		  	<div class="col-md-4 my-3 text-center" style="height:10rem"  >
+		    	<img src="img/logo.png" width="40%" alt=""/>
+			</div>
+			<!------------------------------->
+		</div>
+		<!--------end header------------------>	 
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-6 my-5 text-center">
+				
+				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+					  <img src="img/thaythien (1).jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+					  <img src="img/thaythien (2).jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+					  <img src="img/thaythien (3).jpg" class="d-block w-100" alt="...">
+					</div>
+					 <div class="carousel-item">
+					  <img src="img/thaythien (4).jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+					  <img src="img/thaythien (5).jpg" class="d-block w-100" alt="...">
+					</div>
+					  <div class="carousel-item">
+					  <img src="img/thaythien (6).jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+					  <img src="img/thaythien (7).jpg" class="d-block w-100" alt="...">
+					</div>
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(6,132,164,1.00)"></span>
+					<span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(6,132,164,1.00)"></span>
+					<span class="visually-hidden">Next</span>
+				  </button>
+				</div>
+	        
+			</div>
+			<div class="col-md-3"></div>
+			<div class="col-md-8 my-4  text-dark">
+				<h1>ABOUT</h1>
+			</div>
+			<div class="col-md-3"></div>
+			<div class="col-md-8 fs-3">
+				<div class="text-custom"style="font-style: italic" >
+			  		- Aikido Aishinkan Việt Nam, được sáng lập vào năm 2014, bởi Thầy Trí Thiền. Thầy đã có chứng nhận Tứ đẳng Huyền đai.<hr>
+				  - Thầy là người nhiệt tình và thân thiện với tất cả mọi người.<hr>
+				  - Từ năm 2014 - 2021, Thầy cùng với các anh em bạn bè trong hội đã triển khai hơn 10 trung tâm. <hr>
+				  - Các trung tâm này trải đều tất cả các quận huyện của thành phố và có mặt tại Long An - Mỹ Tho. <hr>
+				</div>
+			</div>
+		</div>
+		<!--------footer------------------>
+			<div class="marque fs-5" style="font-style: italic">
+				<marquee>
+					Copyright by Aikido Aishinkan Vietnam 
+				</marquee>
+			</div>
+			<!--		end container-->
+	  </div>
+	</div>
+	<!--------------------------------------------------------------------------------------------------------------------->
+<!--WoW-->
+ <script src="js/wow.js"></script>
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+<!--end WoW-->	
+<!--------------------------------------------------------------------------------------------------------------------->	
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

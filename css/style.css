@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	src:url("../font/Sansita-Black.ttf");
+	font-family:"sansita-one";
+}
+@font-face{
+	src:url("../font/SansitaSwashed-VariableFont_wght.ttf");
+	font-family:"sansita-one";
+}
+.home h1{
+	font-family:'alex-brush';
+	font-size: 3rem;
+	font-style: italic;
+	margin-top: -50px
+}
+
+.container-fluid{
+	background: linear-gradient(290deg, #20758C -0.64%, #A3B2C3 103.6%);
+	box-sizing: border-box;
+}
+/*Text header*/
+.text-header{
+	font: 300 0.7rem/1.5 "Neuton";
+  	color: rgba(1,51,54,1.00);
+  	text-align: center;
+	 }
+p {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  display: inline-block;
+  border: 4px double rgba(189,193,193,1.00);
+  border-width: 4px 0;
+  padding: 1em 0em;
+  width: 35em;
+  margin: 0 0 0 0;
+}
+p span {
+  font: 700 3.5em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: 0.25em 0 0.3em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  background: url("../img/cross1.png");
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/*end Text header*/
+.marque{
+	display: flex;
+	justify-content: center;
+	background-color: rgba(49,67,77,0.84);
+	position: fixed;
+	top:96%;
+	left: 0;
+	height: 4%;
+	width: 100%;
+	font-size: 1.5em;
+	color:white;
+	z-index: 9999;
+}
+/*------------------------lightbox--------------------*/
+.lightbox-custom{
+	position: relative;
+	top:5vh;
+}
+.ite_a img
+{
+	transition: all .2s linear;
+	transform: scale(2);
+	z-index: 1;
+}
+.ite_a:hover img
+{
+	transform: scale(1);
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.ite_a{
+	float:left;
+	position: relative;
+	margin: 2%;
+	overflow: hidden;
+	opacity: 1;
+	
+}
+/*------------------------lightbox--------------------*/
+
+
+.icon{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
